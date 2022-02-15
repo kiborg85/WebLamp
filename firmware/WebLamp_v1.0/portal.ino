@@ -22,6 +22,13 @@ bool checkPortal() {
     if (portal.update("sw")) portal.answer(data.power);
     if (portal.update("col")) portal.answer(data.color);
   }
+  
+    //подмигиваем с вэба
+  if (portal.click("blink1")) {
+    Serial.println("send blink");
+    wink();
+  }
+
 
   // формы
   if (portal.form()) {
