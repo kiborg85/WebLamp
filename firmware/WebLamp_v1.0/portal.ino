@@ -26,7 +26,8 @@ bool checkPortal() {
     //подмигиваем с вэба
   if (portal.click("blink1")) {
     Serial.println("send blink");
-    wink();
+    winkFlag = 1;
+    sendPacket();
   }
 
 
