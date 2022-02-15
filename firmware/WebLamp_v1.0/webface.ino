@@ -25,6 +25,12 @@ void build() {
   add.SLIDER("col", "Color:", data.color, 0, 255);
   add.BLOCK_END();
 
+  //////////
+  
+  add.BUTTON_MINI("blink1", "Подмигнуть");        
+  
+  //////////  
+  
   add.FORM_BEGIN("/save");
 
   add.LABEL("WIFI");
